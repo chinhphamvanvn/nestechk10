@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*reset*/
+ul {
+    list-style-type: none;
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.sidebar-left, .sidebar-right, .main {
+    min-height: 100vh;
+}
+
+.sidebar-left {
+    width: 20%;
+    background-color: aliceblue;
+}
+
+.main {
+    width: 55%;
+    background-color: azure;
+}
+
+.sidebar-right {
+    width: 25%;
+    background-color: darkcyan;
+}
