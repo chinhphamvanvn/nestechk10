@@ -4,32 +4,94 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: SemiBold;
+    src: url("./fonts/OpenSans-Semibold.ttf");
+}
+
 /*reset*/
 ul {
     list-style-type: none;
 }
 
 .container {
-    width: 1200px;
+    width: 1600px;
     display: flex;
     margin: 0 auto;
 }
 
-.sidebar-left, .sidebar-right, .main {
+.sidebar-left,
+.sidebar-right,
+.main {
     min-height: 100vh;
 }
 
 .sidebar-left {
-    width: 20%;
+    width: 17%;
     background-color: aliceblue;
 }
 
 .main {
-    width: 55%;
-    background-color: azure;
+    width: 59%;
+    padding: 40px;
+    background-color: #F5F5FB;
+}
+
+.main .bar-top .box-search input {
+    background-color: white;
+    min-width: 472px;
+    height: 56px;
+    border-radius: 10px;
+    padding: 0.5rem 0 0.5rem 3rem;
+    border: none;
+    font-size: 1rem;
+    background-image: url("./images/icon-search.png");
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    background-position-x: 15px;
+    background-position-y: 18px;
+}
+
+.main .bar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .bar-top .box-search input:focus {
+    outline: 0.5px solid #ccc;
+}
+
+.main .bar-top .notify a img {
+    width: 20px;
+    height: 25px;
+}
+
+.main .top-menu {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main .top-menu .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+}
+
+.main .top-menu .menu ul li {
+    color: rgba(118, 132, 146, .80);
+    font-family: SemiBold;
+    font-size: 17px;
+}
+
+.main .top-menu .menu ul li.active {
+    color: #5E81F4;
+    border-bottom: 1px solid #5E81F4;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
 }
 
 .sidebar-right {
-    width: 25%;
+    width: 24%;
     background-color: darkcyan;
 }
