@@ -1,0 +1,1 @@
+- phím tắt mở/đóng figma là Ctr \
