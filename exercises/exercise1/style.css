@@ -9,10 +9,17 @@
     src: url("./fonts/OpenSans-Semibold.ttf");
 }
 
+@font-face {
+    font-family: OpenSansBold;
+    src: url("./fonts/OpenSans-Bold.ttf");
+}
+
 /*reset*/
 ul {
     list-style-type: none;
 }
+
+/*end reset*/
 
 .container {
     width: 100%;
@@ -38,25 +45,26 @@ ul {
     background-color: #F5F5FB;
 }
 
-.main .bar-top .box-search input {
-    background-color: white;
-    min-width: 472px;
-    height: 56px;
-    border-radius: 10px;
-    padding: 0.5rem 0 0.5rem 3rem;
-    border: none;
-    font-size: 1rem;
-    background-image: url("./images/icon-search.png");
-    background-repeat: no-repeat;
-    background-size: 24px 24px;
-    background-position-x: 15px;
-    background-position-y: 18px;
-}
-
 .main .bar-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main .bar-top .box-search input {
+    height: 56px;
+    padding: 0.5rem 0 0.5rem 3rem;
+    min-width: 472px;
+    border-radius: 10px;
+    /* background-color: white;
+    background-image: url("./images/icon-search.png");
+    background-repeat: no-repeat;
+    background-position: 15px 18px;*/
+    
+    background: white url("./images/icon-search.png") no-repeat 15px 18px;
+    background-size: 20px auto;
+    font-size: 1rem;
+    border: none;
 }
 
 .main .bar-top .box-search input:focus {
@@ -90,6 +98,65 @@ ul {
     color: #5E81F4;
     border-bottom: 1px solid #5E81F4;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+.main .top-menu .menu ul li:hover {
+    cursor: pointer;
+    color: #5E81F4;
+    border-bottom: 1px solid #5E81F4;
+}
+
+
+
+.main .slide .info-course {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: SemiBold;
+    align-items: center;
+}
+
+.main .slide .info-course .title-course h2 {
+    font-size: 24px;
+}
+
+.main .slide .info-course .title-course p {
+    font-size: 18px;
+}
+
+.main .slide .info-course .duration p {
+    font-size: 1rem;
+}
+
+.main .slide .footer-course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 363px;
+    border-radius: 5px;
+    padding: 40px;
+    background: url("./images/course-primary.jpg") no-repeat top left;
+    object-fit: cover;
+    background-size: 100%;
+}
+
+.main .slide .footer-course .play img{
+    width: 46px;
+    height: 46px;
+}
+
+.main .slide .footer-course .avatar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .sidebar-right {
