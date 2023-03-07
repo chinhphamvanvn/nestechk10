@@ -23,7 +23,7 @@ ul {
 
 .container {
     width: 100%;
-    max-width: 1240px;
+    max-width: 1600px;
     display: flex;
     margin: 0 auto;
 }
@@ -35,12 +35,12 @@ ul {
 }
 
 .sidebar-left {
-    width: 17%;
+    width: 10%;
     background-color: aliceblue;
 }
 
 .main {
-    width: 59%;
+    width: 80%;
     padding: 40px;
     background-color: #F5F5FB;
 }
@@ -139,12 +139,13 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    min-height: 363px;
+    margin-bottom: 100px;
     border-radius: 5px;
     padding: 40px;
-    background: url("./images/course-primary.jpg") no-repeat top left;
+    background: url(./images/course-primary.jpg) no-repeat top left;
     object-fit: cover;
     background-size: 100%;
+    height: 365px;
 }
 
 .main .slide .footer-course .play img{
@@ -159,7 +160,11 @@ ul {
     object-fit: cover;
 }
 
+.main .slide .footer-course .play img:hover, .main .slide .footer-course .avatar img:hover {
+    cursor: pointer;
+}
+
 .sidebar-right {
-    width: 24%;
+    width: 10%;
     background-color: darkcyan;
 }
