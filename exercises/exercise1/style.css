@@ -266,3 +266,100 @@ ul {
     width: 24%;
     background-color: darkcyan;
 }
+
+/*Responsive*/
+@media only screen and (max-width: 600px) {
+    .sidebar-left {
+        display: none;
+    }
+
+    .sidebar-right {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        padding: 15px;
+        background-color: #F5F5FB;
+    }
+
+    .main .bar-top {
+        width: 100%;
+    }
+
+    .main .bar-top .box-search {
+        width: 80%;
+    }
+
+    .main .bar-top .box-search input {
+        min-width: auto;
+        width: 100%;
+        height: 40px;
+        background-position-y: 11px;
+    }
+
+    .main .top-menu .menu ul {
+        gap: 1rem;
+    }
+
+    .main .top-menu .menu ul li {
+        font-size: 16px;
+    }
+
+    .main .courses {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .main .courses .course {
+        width: 100%;
+    }
+
+    .main .top-menu {
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .main .top-menu .logo h1{
+        font-size: 20px;
+    }
+
+    .main .highlight-course {
+        height: 230px;
+        margin-bottom: 2rem;
+    }
+
+    .main .highlight-course .info-course {
+        padding: 1rem;
+    }
+
+    .main .highlight-course .description-course .title-course h2, .main .courses .course .description-course .title-course h2 {
+        font-size: 16px;
+    }
+
+    .main .highlight-course .description-course .title-course p, .main .courses .course .description-course .title-course p {
+        font-size: 14px;
+    }
+
+    .main .highlight-course .description-course .duration p, .main .courses .course .description-course .title-course p {
+        font-size: 14px;
+    }
+
+    .main .highlight-course .footer-course .play img, .main .highlight-course .footer-course .avatar img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .main .courses {
+        gap: 30px;
+    }
+
+    .main .courses .course {
+        height: 230px
+    }
+
+    .main .courses .course .info-course {
+        padding: 1rem;
+    }
+}
