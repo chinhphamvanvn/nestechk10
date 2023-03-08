@@ -14,6 +14,11 @@
     src: url("./fonts/OpenSans-Bold.ttf");
 }
 
+@font-face {
+    font-family: Inter;
+    src: url("./fonts/Inter-Medium.ttf");
+}
+
 /*reset*/
 ul {
     list-style-type: none;
@@ -35,12 +40,12 @@ ul {
 }
 
 .sidebar-left {
-    width: 10%;
+    width: 17%;
     background-color: aliceblue;
 }
 
 .main {
-    width: 80%;
+    width: 59%;
     padding: 40px;
     background-color: #F5F5FB;
 }
@@ -106,65 +111,158 @@ ul {
     border-bottom: 1px solid #5E81F4;
 }
 
-
-
-.main .slide .info-course {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    font-family: SemiBold;
-    align-items: center;
-}
-
-.main .slide .info-course .title-course h2 {
-    font-size: 24px;
-}
-
-.main .slide .info-course .title-course p {
-    font-size: 18px;
-}
-
-.main .slide .info-course .duration p {
-    font-size: 1rem;
-}
-
-.main .slide .footer-course {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main .slide {
+.main .highlight-course {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    position: relative;
     margin-bottom: 100px;
     border-radius: 5px;
-    padding: 40px;
-    background: url(./images/course-primary.jpg) no-repeat top left;
-    object-fit: cover;
-    background-size: 100%;
     height: 365px;
 }
 
-.main .slide .footer-course .play img{
+.main .highlight-course img.primary {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main .highlight-course .info-course {
+    position: absolute;
+    padding: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .highlight-course .description-course {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: Inter;
+    align-items: center;
+}
+
+.main .highlight-course .description-course .title-course h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main .highlight-course .description-course .title-course p {
+    font-size: 18px;
+}
+
+.main .highlight-course .description-course .duration p {
+    font-size: 1rem;
+}
+
+.main .highlight-course .footer-course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .highlight-course .footer-course .play img{
     width: 46px;
     height: 46px;
 }
 
-.main .slide .footer-course .avatar img{
+.main .highlight-course .footer-course .avatar img{
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.main .slide .footer-course .play img:hover, .main .slide .footer-course .avatar img:hover {
+.main .highlight-course .footer-course .play img:hover, .main .highlight-course .footer-course .avatar img:hover {
     cursor: pointer;
 }
 
+.main .courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.main .courses .course {
+    height: 320px;
+    width: calc(50% - 20px);
+    border-radius: 5px;
+    position: relative;
+}
+
+.main .courses .course img.primary {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.main .courses .course .info-course {
+    position: absolute;
+    padding: 40px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main .courses .course .description-course {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: Inter;
+    align-items: center;
+}
+
+.main .courses .course .description-course .title-course h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.main .courses .course .description-course .title-course p {
+    font-size: 18px;
+}
+
+.main .courses .course .description-course .duration p {
+    font-size: 1rem;
+}
+
+.main .courses .course .footer-course {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .courses .course .footer-course .play img{
+    width: 46px;
+    height: 46px;
+}
+
+.main .courses .course .footer-course .avatar img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main .courses .course .footer-course .play img:hover, .main .highlight-course .footer-course .avatar img:hover {
+    cursor: pointer;
+}
+
+
 .sidebar-right {
-    width: 10%;
+    width: 24%;
     background-color: darkcyan;
 }
