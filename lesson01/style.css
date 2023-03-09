@@ -1,0 +1,98 @@
+/*
+Các selector trong css
+- viết tên element
+- viết tên class, id
+
+
+- margin, padding
+- position
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 50px;
+}
+
+h1 {
+    color: blueviolet !important;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+
+/* ul li.list {
+    color: red;
+} */
+
+ul li#id-list {
+    color: pink;
+}
+
+ul li {
+    color: green;
+}
+
+ul li:last-child{
+    color: yellow;
+}
+
+ul li:first-child{
+    color: blue;
+}
+
+ul li:nth-child(4){
+    color: goldenrod;
+}
+
+ol * {
+    color: blueviolet;
+}
+
+.hau-due > .hello{
+    color:  blue;
+}
+
+h1, h2, h3 {
+    color: blanchedalmond;
+}
+
+form label[for="fullname"] {
+    color: red;
+}
+
+.boxes {
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 20px;
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box8 {
+    align-self: start;
+}
