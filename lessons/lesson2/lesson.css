@@ -122,10 +122,12 @@ ul {
     width: 90%;
     margin: 100px auto;
     display: flex;
+
+    /* display: flex;
     justify-content: center;
     gap: 15px;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 .box1 {

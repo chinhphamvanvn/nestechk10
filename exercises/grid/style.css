@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas:
+    'sidebarL sidebarL main main main main main sidebarR sidebarR sidebarR';
+}
+
+.sidebar-left,
+.sidebar-right,
+.main {
+    min-height: 100vh;
+}
+
+.sidebar-left {
+    background-color: aliceblue;
+    grid-area: sidebarL;
+}
+
+.main {
+    padding: 40px;
+    background-color: #F5F5FB;
+    grid-area: main;
+}
+
+.sidebar-right {
+    background-color: darkcyan;
+    grid-area: sidebarR;
+}
