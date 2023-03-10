@@ -1,0 +1,47 @@
+@import "button";
+@import "constant";
+  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 5rem;
+}
+
+h1 {
+    font-size: 16px;
+    font-style: italic;
+    color: $primaryColor;
+}
+
+header {
+    h1 {
+        @extend h1;
+        font-style: normal;
+        text-decoration: line-through;
+    }
+    button {
+        @include buttonCommon($primaryColor, $secondColor, dotted);
+    }
+}
+
+div.contact {
+    button.cancel {
+        @include buttonCommon($secondColor, red, solid);
+    }
+    button.submit {
+        @include buttonCommon($primaryColor, $secondColor, dashed);
+    }
+    .info {
+        h1 {
+            @extend h1;
+            font-weight: bold;
+            font-style: normal;
+            text-decoration: underline;
+        }
+    }
+}

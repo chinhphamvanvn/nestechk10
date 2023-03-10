@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area2</title>
+    <style>
+        .container{
+            display: grid;
+            width: 500px;
+            grid-gap: 15px;
+            grid-template-columns: 1fr 5fr 1fr;
+            grid-template-rows: 50px auto minmax(100px, 300px);
+        }
+        .box {
+            border: 1px solid black;
+        }
+
+        .box-a {
+        }
+        .box-b {
+        }
+        .box-c {
+        }
+        .box-d {
+        }
+        .box-g {
+            grid-column-start: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-a">
+            <p>a</p>
+        </div>
+        <div class="box box-b">b</div>
+        <div class="box box-c">
+            <p>c</p>
+        </div>
+        <div class="box box-d">d</div>
+        <div class="box box-e">e</div>
+        <div class="box box-f">f</div>
+        <div class="box box-g">g</div>
+    </div>
+</body>
+</html>

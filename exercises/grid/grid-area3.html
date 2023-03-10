@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid area2</title>
+    <style>
+        .container{
+            display: grid;
+            width: 500px;
+            grid-gap: 15px;
+            grid-template-areas:"b b b"
+                                "a a a" 
+                                "c c c";
+            /* grid-template-rows: 1fr 10fr 1fr; */
+            grid-template-rows: 50px auto minmax(100px, 300px);
+        }
+        .box {
+            border: 1px solid black;
+        }
+
+        .box-a {
+            grid-area: a;
+        }
+        .box-b {
+            grid-area: b;
+        }
+        .box-c {
+            grid-area: c;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-a">
+            <p>a</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus quibusdam quam nam, dolores suscipit ut necessitatibus perspiciatis modi amet praesentium sequi mollitia eos, soluta, corrupti possimus nulla assumenda! Eius, esse.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ad quas molestiae nesciunt aliquid vero minus doloremque ut eveniet velit saepe facilis, deleniti voluptatibus eaque! Expedita nobis totam beatae assumenda.</p>
+        </div>
+        <div class="box box-b">b</div>
+        <div class="box box-c">
+            <p>c</p>
+            <p>Chủ tịch Tập đoàn Hoa Sen nói ông trăn trở vấn đề thừa kế ba năm qua và cuối cùng chọn giải pháp sẽ chuyển toàn bộ cổ phiếu của mình vào một quỹ phi lợi nhuận.
+
+                Tại phiên họp thường niên sáng 10/3, ông Vũ nhắc lại tuyên bố rút khỏi Tập đoàn Hoa Sen để xuất gia vào năm 2026 được chia sẻ lần đầu cách đây hai năm. Ông từng cho biết đây là ước mong từ năm 30 tuổi, không gì có thể lay chuyển và đã mua đất, xây chùa ở Lâm Đồng để chuẩn bị cho kế hoạch này.
+                
+                "Bốn năm nữa, tôi sẽ là một ông sư. Tôi phải giữ đúng giới luật của Phật là vô sở hữu. Bởi vậy ba năm qua, tôi trăn trở giải quyết vấn đề thừa kế và chọn người lãnh đạo Hoa Sen trong tương lai", ông Vũ nói.
+                
+                Ông cho biết giải pháp đưa ra sau nhiều cân nhắc là chuyển toàn bộ cổ phiếu đứng tên mình vào một quỹ phi lợi nhuận mang tên Đại Tùng Lâm Hoa Sen. Theo số liệu cập nhật mới nhất vào ngày 31/1, ông là cổ đông lớn nhất của Hoa Sen khi nắm gần 102 triệu cổ phiếu, tương đương 17,02% vốn. Khối cổ phiếu này theo giá thị trường khoảng 1.600 tỷ đồng.
+                
+                Người đứng đầu Tập đoàn Hoa Sen nói rằng ông sẽ là chủ tịch danh dự của quỹ phi lợi nhuận này. Con cháu, người thân nếu ông đánh giá "là người có đạo đức, chính trực, tâm thiện lương, biết phụng sự, khiêm nhường" sẽ được bổ nhiệm vào hội đồng điều hành quỹ và trả thù lao xứng đáng.</p>
+        </div>
+    </div>
+</body>
+</html>

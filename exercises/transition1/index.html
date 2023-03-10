@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .images {
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .images img {
+            width: 80%;
+            height: auto;
+            -webkit-transition: -webkit-transform 2s;
+            transition: transform 5s;
+        }
+        .images img:hover {
+            width: 100%;
+            -webkit-transform: rotate(-360deg); /* Safari */
+            transform: rotate(-360deg);
+        }
+
+        h1 {
+            display: inline-block;
+            background-color: aquamarine;
+        }
+        h1:hover {
+            transition: transform 5s;
+            transform: translate(0px, 100px);
+            transform: scale(2,3);
+            transform: rotate(360deg);
+        }
+        
+        h2 {
+            position: relative;
+            animation-name: animationH2;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            /* animation-iteration-count: infinite; */
+        }
+        
+        h3 {
+            position: relative;
+            animation-name: animationH3;
+            animation-duration: 1s;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+        }
+
+        @keyframes animationH2 {
+            from   {left:0px; bottom:-50px; opacity: 0;}
+            to {left:0px; bottom:0px; opacity: 1;}
+        }
+
+        @keyframes animationH3 {
+            0%   {left:0px; bottom:-50px; opacity: 0;}
+            50%   {left:0px; bottom:-25px; opacity: 0.5;}
+            100% {left:0px; bottom:0px; opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="images">
+        <img src="./images/chao-trung-bien.jpg" alt="">
+        <h1>Phạm Văn Chính</h1>
+
+        <h2>Hello everyone</h2>
+        <h3>How are you</h3>
+    </div>
+
+</body>
+</html>

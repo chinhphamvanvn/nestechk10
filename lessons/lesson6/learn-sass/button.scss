@@ -1,0 +1,11 @@
+@mixin buttonCommon($backgroundColor, $color, $borderStyle) {
+    margin-top: 15px;
+    padding: 15px 50px;
+    border-radius: $borderRadius;
+    border-style: $borderStyle;
+    &:hover {
+        background-color: $backgroundColor;
+        color: $color;
+        cursor: pointer;
+    }
+}

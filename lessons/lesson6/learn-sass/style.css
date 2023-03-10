@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5rem;
+}
+
+h1, div.contact .info h1, header h1 {
+  font-size: 16px;
+  font-style: italic;
+  color: rgb(64, 24, 121);
+}
+
+header h1, header div.contact .info h1, div.contact .info header h1 {
+  font-style: normal;
+  text-decoration: line-through;
+}
+header button {
+  margin-top: 15px;
+  padding: 15px 50px;
+  border-radius: 5px;
+  border-style: dotted;
+}
+header button:hover {
+  background-color: rgb(64, 24, 121);
+  color: white;
+  cursor: pointer;
+}
+
+div.contact button.cancel {
+  margin-top: 15px;
+  padding: 15px 50px;
+  border-radius: 5px;
+  border-style: solid;
+}
+div.contact button.cancel:hover {
+  background-color: white;
+  color: red;
+  cursor: pointer;
+}
+div.contact button.submit {
+  margin-top: 15px;
+  padding: 15px 50px;
+  border-radius: 5px;
+  border-style: dashed;
+}
+div.contact button.submit:hover {
+  background-color: rgb(64, 24, 121);
+  color: white;
+  cursor: pointer;
+}
+div.contact .info h1 {
+  font-weight: bold;
+  font-style: normal;
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */
