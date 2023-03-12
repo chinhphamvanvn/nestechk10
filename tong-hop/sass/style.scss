@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import "common";
+
+body {
+    padding: 5rem;
+}
+
+h1 {
+    font-size: 1rem;
+    font-style: italic;
+    color: $primaryColor;
+}
+
+header {
+    h1 {
+        @extend h1;
+        font-style: normal;
+        text-decoration: line-through;
+    }
+
+    button {
+        @include commonButton(dotted, $secondColor, $thirdColor, white);
+    }
+}
+
+.contact {
+    button.cancel {
+        @include commonButton(dashed, black, rgb(155, 39, 39), grey);
+    }
+
+    button.submit {
+        @include commonButton(solid, white, rgb(64, 64, 180), green);
+    }
+}

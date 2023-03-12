@@ -1,0 +1,18 @@
+$primaryColor: rgb(64, 24, 121);
+$secondColor: palevioletred;
+$thirdColor: rgb(47, 111, 47);
+
+@mixin commonButton($borderStyle, $color, $colorHover, $backgroundColor) {
+    margin-top: 15px;
+    padding: 15px 50px;
+    border-radius: 10px;
+    border-style: $borderStyle;
+    background-color: $backgroundColor;
+    color: $color;
+    font-weight: bold;
+    font-size: 24px;
+    &:hover {
+        color: $colorHover;
+        cursor: pointer;
+    }
+}

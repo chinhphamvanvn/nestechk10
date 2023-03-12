@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: 2fr 7fr 3fr; /*12 column*/
+            grid-template-rows: 200px 100px minmax(100px, 200px);
+        }
+
+        .box {
+            border: 1px solid black;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-a">a</div>
+        <div class="box box-b">b</div>
+        <div class="box box-c">c</div>
+        <div class="box box-d">d</div>
+        <div class="box box-e">e</div>
+        <div class="box box-f">f</div>
+        <div class="box box-i">i</div>
+    </div>
+</body>
+</html>
